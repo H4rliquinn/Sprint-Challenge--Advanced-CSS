@@ -72,9 +72,13 @@
       }
 
       .btn {
-        .makeButton(@btn-bg-color,white, 100px, 40px);
+        .makeButton(@btn-bg-color,white, 100px, 40px,2.2rem);
+        @media @phone{
+          .makeButton(@btn-bg-color,white, 100%, 60px,1.8rem);
+        }
       }
       @media @phone{
+        margin-top:20px;
         width: 100%;
         order:2;
       }

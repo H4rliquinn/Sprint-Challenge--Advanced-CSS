@@ -18,14 +18,14 @@
     margin:@v 0px;
 }
 
-.makeButton(@color,@textColor,@w,@h){
+.makeButton(@color,@textColor,@w,@h,@fontSize){
     background:@color;
     color:@textColor;
     width:@w;
     height:@h;
     border:1px solid @color;
     border-radius: 5px;
-    font-size: 2.2rem;
+    font-size: @fontSize;
     text-align: center;
     line-height:@h;
     &:hover{
