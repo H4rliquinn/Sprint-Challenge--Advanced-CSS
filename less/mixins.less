@@ -1,1 +1,35 @@
 // Mixins Here
+.bdr{
+    border:1px solid red;
+}
+
+.flex(@dir,@just){
+    display:flex;
+    flex-direction: @dir;
+    justify-content: @just;
+}
+
+.fullCent{
+    width:100%;
+    margin: 0px auto;
+}
+
+.space(@v){
+    margin:@v 0px;
+}
+
+.makeButton(@color,@textColor,@w,@h){
+    background:@color;
+    color:@textColor;
+    width:@w;
+    height:@h;
+    border:1px solid @color;
+    border-radius: 5px;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height:@h;
+    &:hover{
+        background:@textColor;
+        color:@color;
+      }
+}
