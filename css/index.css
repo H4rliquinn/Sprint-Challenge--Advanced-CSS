@@ -177,10 +177,16 @@ a {
   margin: 0 auto;
 }
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
   text-align: center;
+}
+header:hover {
+  opacity: 0.5;
 }
 header h1 {
   margin: 15px 0px;
@@ -195,6 +201,10 @@ header nav {
 header nav a {
   color: #454A59;
   margin: 15px 0px;
+}
+.spacer {
+  display: hidden;
+  height: 125px;
 }
 .intro img {
   border-radius: 5px;
