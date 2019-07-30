@@ -1,1 +1,39 @@
 // Navigation code here
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    background:@nav-bg;
+    border-bottom:1px solid @nav-border;
+    text-align:center;
+    &:hover{
+        opacity:.5;
+    }
+    h1{
+        .space(15px);
+    }
+    nav{
+        .flex(row,space-between);
+        width:400px;
+        margin:0px auto 0px;
+        a{
+            color:@nav-font;
+            .space(15px);
+        }
+    }
+}
+.spacer{
+    display:hidden;
+    height:125px;
+}
+
+
+.intro{
+    img{
+        border-radius: 5px;
+    }
+}
+// @nav-bg: @wild-sand;
+// @nav-font: @river-bend;
+// @nav-border: @sea-shell;
